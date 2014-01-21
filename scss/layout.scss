@@ -1,0 +1,50 @@
+.container{
+	margin: 0 auto;
+	border:1px solid red;
+	
+	@media (min-width:$largest-breakpoint){
+		width:$largest-breakpoint;
+	}
+	
+	@media (min-width: 55em){
+		width:55em;	
+	}
+}
+
+.col-container{
+	@include clearfix;
+}
+.col{
+	margin-top:1em;
+	padding-top:1em;
+	border-top:1px solid blue;
+	min-height:200px;
+	&:first-child{ margin-top:0; padding-top:0; border:none; }
+	
+	@media (min-width:$largest-breakpoint){
+		float:left;	
+		margin-top:0;
+		padding-top:0;
+		border:none;
+	}
+}
+
+.col-1{ background:purple; width:100%; }
+
+.col-2{
+	background:orange;
+	@media (min-width:$largest-breakpoint){
+		width:48.75%;
+		margin-left:2.5%;
+		&:first-child{ margin-left:0; }
+	}
+}
+
+.col-3{
+	background:blue;
+	@media (min-width:$largest-breakpoint){
+		width:32%;
+		margin-left:2%;
+		&:first-child{ margin-left:0; }
+	}
+}
