@@ -4,13 +4,13 @@ Syntax error: Undefined variable: "$largest-breakpoint".
 
 1: .container{
 2: 	margin: 0 auto;
-3: 	border:1px solid red;
+3: 	
 4: 	
 5: 	@media (min-width:$largest-breakpoint){
 6: 		width:$largest-breakpoint;
 7: 	}
 8: 	
-9: 	@media (min-width: 55em){
+9: 	/*@media (min-width: 55em){
 10: 		width:55em;	
 
 Backtrace:
@@ -63,4 +63,4 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.13/vendor/listen/lib/listen/adapter
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 5 of scss/layout.scss\A \A 1: .container{\A 2: 	margin: 0 auto;\A 3: 	border:1px solid red;\A 4: 	\A 5: 	@media (min-width:$largest-breakpoint){\A 6: 		width:$largest-breakpoint;\A 7: 	}\A 8: 	\A 9: 	@media (min-width: 55em){\A 10: 		width:55em;	"; }
+  content: "Syntax error: Undefined variable: \"$largest-breakpoint\".\A         on line 5 of scss/layout.scss\A \A 1: .container{\A 2: 	margin: 0 auto;\A 3: 	\A 4: 	\A 5: 	@media (min-width:$largest-breakpoint){\A 6: 		width:$largest-breakpoint;\A 7: 	}\A 8: 	\A 9: 	/*@media (min-width: 55em){\A 10: 		width:55em;	"; }

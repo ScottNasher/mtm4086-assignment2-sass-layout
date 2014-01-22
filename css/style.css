@@ -364,9 +364,24 @@ h2 {
   font-size: 2.2rem; }
 
 /* -- Banner Components -- */
+.header {
+  height: 54px;
+  background: white;
+  border-bottom: 1px solid #d9d9d9;
+  position: fixed;
+  width: 100%;
+  top: 0; }
+
 .banner {
-  height: 300px;
-  background: #000; }
+  height: 327px;
+  background: grey;
+  border-bottom: 1px solid #d9d9d9; }
+
+.footer {
+  height: 316px;
+  background: cyan;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 50px; }
 
 /* -- Navigation components -- */
 .main-nav ul {
@@ -400,13 +415,12 @@ h2 {
 /* -- Layout Components -- */
 .container {
   margin: 0 auto;
-  border: 1px solid red; }
+  /*@media (min-width: 55em){
+  	width:55em;	
+  }*/ }
   @media (min-width: 1007px) {
     .container {
       width: 1007px; } }
-  @media (min-width: 55em) {
-    .container {
-      width: 55em; } }
 
 .col-container:before, .col-container:after {
   content: " ";
@@ -417,17 +431,11 @@ h2 {
 .col {
   margin-top: 1em;
   padding-top: 1em;
-  border-top: 1px solid blue;
   min-height: 200px; }
-  .col:first-child {
-    margin-top: 0;
-    padding-top: 0;
-    border: none; }
   @media (min-width: 1007px) {
     .col {
       float: left;
-      margin-top: 0;
-      padding-top: 0;
+      margin-top: 1em;
       border: none; } }
 
 .col-1 {
@@ -438,8 +446,8 @@ h2 {
   background: orange; }
   @media (min-width: 1007px) {
     .col-2 {
-      width: 48.75%;
-      margin-left: 2.5%; }
+      width: 46%;
+      margin-left: 4%; }
       .col-2:first-child {
         margin-left: 0; } }
 
@@ -447,7 +455,24 @@ h2 {
   background: blue; }
   @media (min-width: 1007px) {
     .col-3 {
-      width: 32%;
-      margin-left: 2%; }
+      width: 30%;
+      margin-left: 5%;
+      margin-bottom: 8%; }
       .col-3:first-child {
         margin-left: 0; } }
+
+.col-left {
+  background: red; }
+  @media (min-width: 1007px) {
+    .col-left {
+      width: 65%;
+      margin-left: 4%; }
+      .col-left:first-child {
+        margin-left: 0; } }
+
+.col-right {
+  background: yellow; }
+  @media (min-width: 1007px) {
+    .col-right {
+      width: 30%;
+      margin-left: 5%; } }

@@ -1,14 +1,14 @@
 .container{
 	margin: 0 auto;
-	border:1px solid red;
+	
 	
 	@media (min-width:$largest-breakpoint){
 		width:$largest-breakpoint;
 	}
 	
-	@media (min-width: 55em){
+	/*@media (min-width: 55em){
 		width:55em;	
-	}
+	}*/
 }
 
 .col-container{
@@ -17,14 +17,14 @@
 .col{
 	margin-top:1em;
 	padding-top:1em;
-	border-top:1px solid blue;
+	
 	min-height:200px;
-	&:first-child{ margin-top:0; padding-top:0; border:none; }
+	&:first-child{  }
 	
 	@media (min-width:$largest-breakpoint){
 		float:left;	
-		margin-top:0;
-		padding-top:0;
+		margin-top:1em;
+		
 		border:none;
 	}
 }
@@ -34,8 +34,8 @@
 .col-2{
 	background:orange;
 	@media (min-width:$largest-breakpoint){
-		width:48.75%;
-		margin-left:2.5%;
+		width:46%;
+		margin-left:4%;
 		&:first-child{ margin-left:0; }
 	}
 }
@@ -43,8 +43,41 @@
 .col-3{
 	background:blue;
 	@media (min-width:$largest-breakpoint){
-		width:32%;
-		margin-left:2%;
+		width:30%;
+		margin-left:5%;
+		margin-bottom:8%;
 		&:first-child{ margin-left:0; }
 	}
+}
+
+.col-left{
+	background:red;
+	@media (min-width:$largest-breakpoint){
+		width:65%;
+		margin-left:4%;
+		&:first-child{ margin-left:0; }
+	}
+}
+
+.col-right{
+	background:yellow;
+	@media (min-width:$largest-breakpoint){
+		width:30%;
+		margin-left:5%;
+
+		
+	}
+
+}
+
+.ftr-ios{
+
+}
+
+.ftr-daily{
+
+}
+
+.ftr-digg{
+	
 }

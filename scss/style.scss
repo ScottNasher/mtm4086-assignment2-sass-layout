@@ -6,6 +6,8 @@
 
 $largest-breakpoint:1007px;
 
+    
+
 /********Fonts*******/
 $primary-font: "Helvetica Neue",Helvetica,Arial,sans-serif;
 $secondary-font: "Helvetica Neue", Arial, sans-serif;
@@ -18,9 +20,27 @@ h1{}
 h2{font-family: $primary-font; @include font-size(22);}
 
 /* -- Banner Components -- */
+.header{
+	height:54px;
+	background:white;
+	border-bottom:1px solid #d9d9d9;
+	position:fixed;
+	width:100%;
+	top:0;
+}
+
 .banner{
-	height:300px;
-	background:#000;
+	height:327px;
+	background:grey;
+	border-bottom:1px solid #d9d9d9;
+}
+
+.footer{
+	height:316px;
+	background:cyan;
+	border-bottom:1px solid #d9d9d9;
+	margin-top:50px;
+
 }
 
 
