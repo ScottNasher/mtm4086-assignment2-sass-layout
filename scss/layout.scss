@@ -71,13 +71,18 @@
 }
 
 .ftr-ios{
-
+	background:black;
+	@media (min-width:$largest-breakpoint){
+		width:50%;
+		margin-left:0;	
+	}
 }
 
-.ftr-daily{
-
+.ftr-daily-digg{
+	background:grey;
+	@media (min-width:$largest-breakpoint){
+		width:25%;
+		margin-left:0;	
+	}
 }
 
-.ftr-digg{
-	
-}

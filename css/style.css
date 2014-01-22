@@ -476,3 +476,17 @@ h2 {
     .col-right {
       width: 30%;
       margin-left: 5%; } }
+
+.ftr-ios {
+  background: black; }
+  @media (min-width: 1007px) {
+    .ftr-ios {
+      width: 50%;
+      margin-left: 0; } }
+
+.ftr-daily-digg {
+  background: grey; }
+  @media (min-width: 1007px) {
+    .ftr-daily-digg {
+      width: 25%;
+      margin-left: 0; } }
