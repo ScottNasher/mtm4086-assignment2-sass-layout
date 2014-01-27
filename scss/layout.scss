@@ -55,10 +55,20 @@
 	}
 }
 
+.col-5{
+	@media (min-width:$largest-breakpoint){
+		width:19.2%;
+		margin-left:1%;
+		margin-bottom:0%;
+		&:first-child{ margin-left:0; }
+	}
+
+}
+
 .col-left{
 	
 	@media (min-width:$largest-breakpoint){
-		width:65.5%;
+		width:65.3%;
 		margin-left:4%;
 		&:first-child{ margin-left:0; }
 	}
@@ -79,16 +89,67 @@
 
 }
 
+.header{
+	height:54px;
+	background:white;
+	border-bottom:1px solid $borderGrey;
+	position:fixed;
+	width:100%;
+	top:0;
+	margin-bottom:20px;
+}
+
+.banner{
+	height:327px;
+	background:url(../images/bannerBG.jpeg);
+	background-size: cover;
+	background-repeat:no-repeat;
+	border-bottom:1px solid $borderGrey;
+	
+	
+	h2{color:white; font-size:1em; font-family:$secondary-font;}
+	a{float:right; margin-top:-20px; color:white; text-decoration: none;}
+	a:hover{text-decoration: underline;}
+	img{width:100%;}
+}
+
+.footer{
+	height:316px;
+	background:$footerGrey;
+	border-bottom:1px solid $borderGrey;
+	margin-top:50px;
+
+	.mainContentTitle{float:left;}
+	.contentText{float:left; width:43%; margin:0; font-size:0.9em;}
+	.mainContentInfo{float:left; width:35%; margin:0 auto; margin-top:35px;}
+	h3{font-size:1em; font-family:$secondary-font; margin-top:30px;}	
+	
+}
+
 .ftr-ios{
-	background:black;
+	background:$footerGrey;
+	
+	height:100%;
+	margin-top:0;
+	img{float:right; margin-top:-9px; margin-right:50px;}
+	
+	
+
+
 	@media (min-width:$largest-breakpoint){
-		width:50%;
+		width:49.8%;
 		margin-left:0;	
 	}
 }
 
 .ftr-daily-digg{
-	background:grey;
+	background:$footerGrey;
+	margin-top:0;
+	border-left:1px solid #cacaca;
+	min-height:316px;
+	.contentText{width:80%; margin-left:20px;}
+	.mainContentInfo{width:80%; margin-left:20px;}
+	h3{ margin-left:20px;}
 	@media (min-width:$largest-breakpoint){
 		width:25%;
 		margin-left:0;	
@@ -108,7 +169,7 @@
 	a{
 		font-family:$primary-font;
 		text-decoration:none;
-		color:#0093cc;
+		color:$hoverBlue;
 		font-size:0.9em;
 		margin-left:-60px;
 	}
@@ -122,3 +183,15 @@
 	};
 }
 
+
+
+.otherContent{
+	img{float:left; width:30%; padding:10px;}
+}
+
+.bottom{
+	border-top:1px solid #cacaca;
+	background-color:$footerGrey;
+	height:70px;
+	margin-top:-20px;
+}
